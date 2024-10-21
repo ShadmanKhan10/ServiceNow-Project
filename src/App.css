@@ -1,0 +1,571 @@
+body {
+  background-color: #032d42;
+}
+.event-logo-container {
+  display: flex;
+  justify-content: center;
+}
+.event-logo {
+  width: 30%;
+  height: 8vw;
+  object-fit: contain;
+}
+
+.home-text {
+  text-align: center;
+  margin: 0;
+  margin-top: 2.5vw;
+  color: #62d84e;
+  font-family: Gilroy;
+  font-size: 2.5vw;
+}
+.avatar-container {
+  text-align: center;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+}
+.avatar-img {
+  width: 20vw;
+  height: 23.2vw;
+  object-fit: contain;
+}
+.button-container {
+  text-align: center;
+}
+.global-btn {
+  background: transparent;
+  border: 0.12vw solid #62d84e;
+  width: 9%;
+  height: 2.6vw;
+  color: #62d84e;
+  font-family: "Gilroy";
+  /* font-weight: 600; */
+  font-size: 1.7vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  margin-bottom: 2vw;
+}
+.input-container {
+  /* border: 2px solid red; */
+  width: 35%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4vw;
+}
+.input-fields-container {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 4vw;
+  position: relative;
+  background-color: #195e81d9;
+  margin-bottom: 2.5vw;
+}
+.icons-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5vw;
+  border-right: 0.1vw solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  height: 2vw;
+  width: 2vw;
+  object-fit: contain;
+}
+.inputs {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding-left: 7vw;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1.7vw;
+  outline: none;
+  color: white;
+  font-family: "Gilroy";
+}
+input::placeholder {
+  color: rgba(245, 245, 245, 0.52);
+  font-family: "Gilroy";
+}
+.error-container {
+  position: relative;
+  top: -2.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gilroy";
+}
+.error {
+  margin: 0;
+  font-size: 1.2vw;
+  color: yellow;
+}
+.submit-btn-container {
+  text-align: center;
+}
+.submit-btn-registration {
+  background: transparent;
+  border: 0.12vw solid #62d84e;
+  width: 23%;
+  height: 2.6vw;
+  color: #62d84e;
+  font-family: "Gilroy";
+  font-size: 1.7vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+.home {
+  height: 3vw;
+  width: 6vw;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.7vw;
+  cursor: pointer;
+}
+.back {
+  height: 3vw;
+  width: 6vw;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.7vw;
+  cursor: pointer;
+}
+.gender-text {
+  text-align: center;
+  margin: 0;
+  margin-top: 3vw;
+  color: white;
+  font-family: Gilroy;
+  font-size: 2.5vw;
+}
+.gender-avatar-container {
+  /* border: 2px solid red; */
+  margin-top: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6vw;
+}
+.gender-avatar-male-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.gender-avatar-female-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.gender-avatar-male {
+  height: 15vw;
+  width: 15vw;
+  object-fit: contain;
+  border: 0.2vw solid #62d84e;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+.gender-avatar-female {
+  height: 15vw;
+  width: 15vw;
+  object-fit: contain;
+  border: 0.2vw solid #62d84e;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+.selected-gender-avatar-male {
+  height: 15vw;
+  width: 15vw;
+  object-fit: contain;
+  border: 0.2vw solid white;
+  border-radius: 2vw;
+  cursor: pointer;
+  box-shadow: 0vw 0vw 1vw 0.5vw rgba(255, 255, 255, 0.5);
+}
+.selected-gender-avatar-female {
+  height: 15vw;
+  width: 15vw;
+  object-fit: contain;
+  border: 0.2vw solid white;
+  border-radius: 2vw;
+  cursor: pointer;
+  box-shadow: 0vw 0vw 1vw 0.5vw rgba(255, 255, 255, 0.5);
+}
+
+.male-text {
+  color: white;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 2vw;
+}
+.female-text {
+  color: white;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+.choose-gender-description-container {
+  margin-top: 2.5vw;
+  margin-bottom: 1.5vw;
+}
+.choose-gender-description {
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-family: Gilroy;
+  font-size: 1.7vw;
+}
+.main-camera-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+}
+.center-camera-container {
+  width: 22vw;
+  height: 28.9vw;
+  border: 2px solid green;
+  border-radius: 1.5vw;
+  position: relative;
+}
+.capture-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4vw;
+  width: 4vw;
+  object-fit: contain;
+  cursor: pointer;
+  z-index: 5;
+}
+.confirm,
+.retake {
+  font-size: 1.5vw;
+  /* margin-bottom: 2vw; */
+}
+.scanning-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  /* top: -0.3vw; */
+  left: 0;
+  z-index: 10;
+}
+
+.scanner-line {
+  position: absolute;
+  width: 100%;
+  height: 0.5vw;
+  background-color: limegreen;
+  /* box-shadow: 0 0 10px 3px limegreen; */
+  top: 0; /* Start the line from the top */
+}
+
+.webcam-preview {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5vw;
+  object-fit: cover;
+}
+.retake-confirm-container {
+  margin-top: 1.5vw;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.output-avatar-container {
+  /* border: 2px solid red; */
+  height: 27vw;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  margin-top: 1vw;
+}
+.big-avatar-container {
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 20%;
+}
+.generated-avatar-big-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1.2vw;
+}
+.list-avatar-container {
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vw;
+}
+.avatar-row {
+  width: 100%;
+  height: 30%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.generated-avatar-circular {
+  height: 7vw;
+  width: 7vw;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  object-position: top;
+}
+.selected {
+  border: 0.25vw solid white;
+}
+.download-button-container {
+  width: 50%;
+  text-align: right;
+  margin-top: 1vw;
+}
+.download-btn {
+  background: transparent;
+  border: 0.12vw solid #62d84e;
+  width: 31%;
+  height: 3.6vw;
+  color: white;
+  font-family: "Gilroy";
+  /* font-weight: 600; */
+  font-size: 2vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  margin-right: 2.7vw;
+  margin-bottom: 2vw;
+}
+
+@media only screen and (orientation: portrait) {
+  .event-logo {
+    width: 60%;
+    height: 25vw;
+  }
+  .home-text {
+    font-size: 6.5vw;
+  }
+  .avatar-container {
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+  }
+  .avatar-img {
+    width: 60vw;
+    height: 80vw;
+  }
+  .global-btn {
+    border: 0.2vw solid #62d84e;
+    width: 28%;
+    height: 7.5vw;
+    font-size: 5vw;
+    border-radius: 0.7vw;
+    padding-top: 0.8vw;
+    box-sizing: border-box;
+  }
+  .submit-btn-registration {
+    background: transparent;
+    border: 0.12vw solid #62d84e;
+    width: 29%;
+    height: 7.5vw;
+    color: #62d84e;
+    font-family: "Gilroy";
+    font-size: 4vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin-top: 4vw;
+  }
+
+  .home {
+    height: 6vw;
+    width: 18vw;
+    margin: 3vw;
+  }
+  .back {
+    height: 6vw;
+    width: 18vw;
+    margin: 3vw;
+  }
+  .input-container {
+    width: 85%;
+    top: 6vw;
+  }
+  .input-fields-container {
+    width: 100%;
+    height: 9vw;
+    margin-bottom: 9.5vw;
+  }
+  .icons-container {
+    height: 100%;
+    width: 10vw;
+  }
+  .icons {
+    height: 4vw;
+    width: 4vw;
+  }
+  .inputs {
+    padding-left: 12vw;
+    font-size: 3.3vw;
+  }
+  .error-container {
+    top: -9.4vw;
+  }
+  .error {
+    font-size: 3.3vw;
+  }
+  .submit-btn {
+    border: 0.12vw solid #62d84e;
+    width: 25%;
+    height: 6vw;
+    font-size: 3.5vw;
+    border-radius: 1vw;
+  }
+  .gender-text {
+    font-size: 5vw;
+  }
+  .gender-avatar-container {
+    margin-top: 7vw;
+    gap: 7vw;
+  }
+  .gender-avatar-male {
+    height: 35vw;
+    width: 35vw;
+    object-fit: contain;
+    border: 0.3vw solid #62d84e;
+  }
+  .gender-avatar-female {
+    height: 35vw;
+    width: 35vw;
+    border: 0.3vw solid #62d84e;
+  }
+  .selected-gender-avatar-male {
+    height: 35vw;
+    width: 35vw;
+    border: 0.3vw solid white;
+    box-shadow: 0vw 0vw 5vw 1.5vw rgba(255, 255, 255, 0.5);
+  }
+  .selected-gender-avatar-female {
+    height: 35vw;
+    width: 35vw;
+    border: 0.3vw solid white;
+    box-shadow: 0vw 0vw 5vw 1.5vw rgba(255, 255, 255, 0.5);
+  }
+  .male-female-text-container {
+    gap: 30vw;
+    font-size: 4vw;
+    margin-top: 1vw;
+  }
+  .gender-avatar-male-container {
+    gap: 3vw;
+  }
+  .gender-avatar-female-container {
+    gap: 3vw;
+  }
+  .male-text {
+    font-size: 4vw;
+  }
+  .female-text {
+    font-size: 4vw;
+  }
+  .choose-gender-description-container {
+    margin-top: 8.5vw;
+    margin-bottom: 7.5vw;
+  }
+  .choose-gender-description {
+    font-size: 3.7vw;
+    width: 61%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 12vw;
+  }
+  .main-camera-container {
+    margin-top: 4vw;
+  }
+  .center-camera-container {
+    width: 70vw;
+    height: 95vw;
+    border: 0.3vw solid #62d84e;
+    border-radius: 2.5vw;
+  }
+  .capture-btn {
+    height: 15vw;
+    width: 15vw;
+  }
+  .webcam-preview {
+    border-radius: 2.5vw;
+  }
+  .scanner-line {
+    height: 1vw;
+  }
+  .retake-confirm-container {
+    margin-top: 4.5vw;
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+  }
+  .output-avatar-container {
+    /* border: 2px solid red; */
+    height: 85vw;
+    gap: 2vw;
+    margin-top: 3vw;
+  }
+  .big-avatar-container {
+    height: 100%;
+    width: 60%;
+  }
+  .generated-avatar-big-image {
+    border-radius: 2vw;
+  }
+  .list-avatar-container {
+    /* border: 2px solid green; */
+    width: 18%;
+    gap: 2vw;
+  }
+  .avatar-row {
+    /* border: 2px solid red; */
+    gap: 4vw;
+  }
+  .generated-avatar-circular {
+    height: 10vw;
+    width: 10vw;
+  }
+  .selected {
+    border: 0.3vw solid white;
+  }
+  .download-button-container {
+    width: 100%;
+    text-align: left;
+    margin-top: 5vw;
+  }
+  .download-btn {
+    position: relative;
+    left: 35%;
+    transform: translateX(-35%);
+    border: 0.15vw solid #62d84e;
+    width: 38%;
+    height: 10vw;
+    font-size: 5vw;
+    border-radius: 1vw;
+  }
+}
