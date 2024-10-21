@@ -378,9 +378,9 @@ input::placeholder {
     border: 0.2vw solid #62d84e;
     width: 28%;
     height: 7.5vw;
-    font-size: 5vw;
+    font-size: 4vw;
     border-radius: 0.7vw;
-    padding-top: 0.8vw;
+    padding: 0;
     box-sizing: border-box;
   }
   .submit-btn-registration {

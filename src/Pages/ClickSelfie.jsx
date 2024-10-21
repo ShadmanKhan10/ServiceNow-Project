@@ -30,6 +30,9 @@ export default function ClickSelfie() {
   const navigateToGenetatedAvatar = () => {
     navigate("/generated-avatar");
   };
+  const navigateToClickSelfie = () => {
+    navigate(-1);
+  };
 
   const handleCaptureClick = async () => {
     let imageSrc = null;
